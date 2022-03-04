@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech for javascript </title>
+    <!-- link for custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- boxicons  -->
+     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="title">
+           <box-icon name='user-voice' animation='tada' color='#161111' ></box-icon>
+            <span>Text To Speech</span>
+        </div>
+        <form action="#">
+            <div class="field">
+                <label for="text">Enter Text</label>
+                <textarea name="text" id="text" cols="0" rows="5" placeholder="Enter Text"></textarea>
+            </div>
+            <div class="field">
+                <label for="voice">Select Voice</label>
+                <div class="select">
+                    <select name="voice" id="voice"> </select>
+                </div>
+            </div>
+            <div class="convert_btn">
+                <button>Convert to Speech</button>
+            </div>
+        </form>
+    </div>
+    
+     <!-- link for custom js  -->
+    <script src="./assets/js/app.js" defer></script>
+</body>
+</html>

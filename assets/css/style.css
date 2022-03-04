@@ -1,0 +1,89 @@
+/* style css  */
+
+/* variables declare  */
+:root {
+    --primary-color: #30336b;
+    --secondary-color: #f5f6fa;
+    --poppins: Poppins;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--poppins);
+    font-size: 16px;
+    position: relative;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    position: relative;
+    width: min(100% - 2rem, 50%);
+    height: auto;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.165);
+    user-select: none;
+}
+@media (max-width: 600px) {
+    .wrapper{
+        width: calc(100% - 2rem);
+    }
+}
+.wrapper .title{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.wrapper .title span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: .4rem;
+}
+form{
+    padding-top: 1rem;
+    position: relative;
+}
+form .field {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.field textarea,
+.field select{
+    width: 100%;
+    outline: none;
+    border: 1px solid silver;
+    padding: .6rem;
+    font-family: var(--poppins);
+    font-size: 1rem;
+    resize: vertical;
+    border-radius: 4px;
+    margin-top: .5rem;
+}
+.convert_btn button{
+    width: 100%;
+    padding: .6rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    outline: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    position: relative;
+    border-radius: 5px;
+    font-family: var(--poppins);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.convert_btn button:hover{
+    background-color: #424697;
+}
